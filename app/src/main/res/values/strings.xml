@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BattleShip</string>
+    <string name="Battleship">BattleShip</string>
+    <string name="play">Play</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="battleship_profile">BattleShip Profile</string>
+    <string name="pick_side">Pick a side</string>
+    <string name="insert_crew_name">Insert Crew Name...</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="player_vs_ai">Player VS. AI</string>
+    <string name="player_vs_player">Player VS. Player</string>
+    <string name="vs">VS.</string>
+    <string name="war_opponent">War Opponent</string>
+    <string name="battleship_ai">Battleship (AI)</string>
+    <string name="my_turn">Your Turn</string>
+    <string name="enemy_turn">Enemy Turn</string>
+    <string name="pick_a_board">Pick Your Board</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="boats_left">Enemy Boats Left:</string>
+    <string name="numWinsP">0</string>
+    <string name="numWinsAI">0</string>
+
+</resources>

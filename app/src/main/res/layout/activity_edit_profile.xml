@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditProfile"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/BackGroudColor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30sp"
+        android:text="@string/battleship_profile"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:textStyle="bold|italic"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="220sp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cruzada_portuguesa"
+            android:tag="initImage"
+            android:layout_marginRight="10sp"
+            app:civ_border_color="@color/Selected_side"
+            app:civ_border_width="6sp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/marinha_espanhola"
+            android:tag="initImage"
+            app:civ_border_color="@color/Transparent"
+            app:civ_border_width="6sp"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/PickSideBtn"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_side"
+        android:layout_marginTop="20sp"/>
+
+    <EditText
+        android:id="@+id/CrewNameTF"
+        android:maxLines="1"
+        android:maxEms="30"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:hint="@string/insert_crew_name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="15dp"
+        android:fontFamily="monospace"/>
+
+
+
+    <Button
+        android:id="@+id/SaveBtn"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_marginTop="20sp"/>
+
+    <Button
+        android:id="@+id/CancelBtn"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"/>
+
+</LinearLayout>

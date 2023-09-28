@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackGroudColor"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_a_board"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="40sp"/>
+
+    <!-- TABLE -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-5sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="32sp"
+                android:layout_height="37sp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/Transparent"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="32sp"
+                android:layout_height="37sp"
+                android:layout_marginTop="-8sp"
+                android:backgroundTint="@color/Transparent"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="32sp"
+                android:layout_height="37sp"
+                android:layout_marginTop="-8sp"
+                android:backgroundTint="@color/Transparent"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="32sp"
+                android:layout_height="37sp"
+                android:layout_marginTop="-8sp"
+                android:backgroundTint="@color/Transparent"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="32sp"
+                android:layout_height="37sp"
+                android:layout_marginTop="-8sp"
+                android:backgroundTint="@color/Transparent"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="32sp"
+                android:layout_height="37sp"
+                android:layout_marginTop="-8sp"
+                android:backgroundTint="@color/Transparent"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="32sp"
+                android:layout_height="37sp"
+                android:layout_marginTop="-8sp"
+                android:backgroundTint="@color/Transparent"
+                android:text="7"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="32sp"
+                android:layout_height="37sp"
+                android:layout_marginTop="-8sp"
+                android:backgroundTint="@color/Transparent"
+                android:text="8"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="32sp"
+                android:layout_height="37sp"
+                android:layout_marginTop="-8sp"
+                android:backgroundTint="@color/Transparent"
+                android:text="9"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="32sp"
+                android:layout_height="37sp"
+                android:layout_marginTop="-8sp"
+                android:backgroundTint="@color/Transparent"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+        <!-- WATER AND LETTERS ROWS -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Transparent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <!-- LETTERS ROW -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginStart="3sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Transparent"
+                    android:text="A"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Transparent"
+                    android:text="B"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Transparent"
+                    android:text="C"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Transparent"
+                    android:text="D"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Transparent"
+                    android:text="E"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Transparent"
+                    android:text="F"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Transparent"
+                    android:text="G"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Transparent"
+                    android:text="H"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Transparent"
+                    android:text="I"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Transparent"
+                    android:text="J"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <!-- 1º ROW -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn00"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginStart="3sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn01"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn02"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn03"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn04"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn05"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn06"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn07"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn08"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn09"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+            </LinearLayout>
+
+
+            <!-- 2º ROW -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn10"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginStart="3sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn11"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn12"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn13"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn14"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn15"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn16"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn17"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn18"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn19"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+            </LinearLayout>
+
+
+            <!-- 3º ROW -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn20"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginStart="3sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn21"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn22"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn23"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn24"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn25"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn26"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn27"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn28"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn29"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+            </LinearLayout>
+
+
+            <!-- 4º ROW -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn30"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginStart="3sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn31"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn32"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn33"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn34"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn35"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn36"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn37"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn38"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn39"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+            </LinearLayout>
+
+
+            <!-- 5º ROW -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn40"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginStart="3sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn41"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn42"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn43"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn44"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn45"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn46"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn47"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn48"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn49"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+            </LinearLayout>
+
+
+            <!-- 6º ROW -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn50"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginStart="3sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn51"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn52"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn53"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn54"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn55"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn56"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn57"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn58"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn59"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+            </LinearLayout>
+
+
+            <!-- 7º ROW -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn60"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginStart="3sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn61"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn62"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn63"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn64"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn65"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn66"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn67"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn68"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn69"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+            </LinearLayout>
+
+
+            <!-- 8º ROW -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn70"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginStart="3sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn71"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn72"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn73"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn74"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn75"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn76"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn77"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn78"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn79"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+            </LinearLayout>
+
+
+            <!-- 9º ROW -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn80"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginStart="3sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn81"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn82"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn83"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn84"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn85"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn86"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn87"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn88"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn89"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+            </LinearLayout>
+
+
+            <!-- 10º ROW -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn90"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginStart="3sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn91"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn92"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn93"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn94"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn95"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn96"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn97"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn98"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+                <Button
+                    android:id="@+id/btn99"
+                    android:layout_width="32sp"
+                    android:layout_height="38sp"
+                    android:layout_marginEnd="3sp"
+                    android:backgroundTint="@color/Selected_side"
+                    android:textColor="@color/Enemy_Turn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textSize="13.5sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="16sp">
+
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="@string/previous"
+            android:layout_marginEnd="24sp"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="@string/next"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="350sp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="15sp"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:text="@string/save"/>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/My_turn"/>
+
+    <corners
+        android:bottomRightRadius="300sp"
+        android:bottomLeftRadius="300sp"
+        android:topRightRadius="300sp"
+        android:topLeftRadius="300sp"/>
+</shape>
